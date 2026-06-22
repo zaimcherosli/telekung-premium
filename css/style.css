@@ -643,12 +643,12 @@ a {
 .promo-box {
     background: linear-gradient(135deg, #2C2C2C 0%, #151515 100%);
     color: #FFFFFF;
-    padding: 40px 30px;
+    padding: 30px 15px;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
     position: relative;
     overflow: hidden;
 }
@@ -681,8 +681,8 @@ a {
 
 .promo-info h2 {
     font-family: var(--font-heading);
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.7rem;
+    line-height: 1.25;
     margin-bottom: 15px;
 }
 
@@ -695,26 +695,28 @@ a {
 .price-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .price-old {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: line-through;
     color: #999999;
 }
 
 .price-new {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--accent-gold);
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .price-save {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     background-color: #D32F2F;
     color: #FFFFFF;
     padding: 3px 10px;
@@ -725,17 +727,18 @@ a {
 .promo-countdown {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(197, 168, 128, 0.2);
-    padding: 25px;
+    padding: 20px 10px;
     border-radius: var(--border-radius-md);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .promo-countdown h3 {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     margin-bottom: 15px;
@@ -745,33 +748,38 @@ a {
 
 .countdown-display {
     display: flex;
-    gap: 15px;
+    gap: 8px;
     margin-bottom: 15px;
+    justify-content: center;
+    width: 100%;
 }
 
 .countdown-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 60px;
+    flex: 1;
+    max-width: 65px;
+    min-width: 48px;
 }
 
 .countdown-val {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-gold);
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    padding: 5px 0;
+    padding: 6px 0;
     border-radius: var(--border-radius-sm);
     border: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
 }
 
 .countdown-label {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: #AAAAAA;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .promo-meta {
@@ -1412,6 +1420,37 @@ a {
         grid-template-columns: 1.2fr 0.8fr;
         padding: 50px;
         align-items: center;
+    }
+
+    .promo-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .price-new {
+        font-size: 2.2rem;
+    }
+
+    .promo-countdown {
+        padding: 25px;
+    }
+
+    .countdown-display {
+        gap: 15px;
+    }
+
+    .countdown-item {
+        min-width: 60px;
+        max-width: none;
+    }
+
+    .countdown-val {
+        font-size: 2rem;
+        padding: 5px 0;
+    }
+
+    .countdown-label {
+        font-size: 0.75rem;
+        margin-top: 5px;
     }
 
     .testimonials-grid {
